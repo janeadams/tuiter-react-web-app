@@ -3,66 +3,126 @@
 <head>
    <meta charset="UTF-8">
    <title>Explore</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+      rel="stylesheet"/>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+      rel="stylesheet"/>
    <link href="index.css"
          rel="stylesheet"/>
-         <link href="../styles.css"
-         rel="stylesheet"/>
+    <link href="../styles.css"
+    rel="stylesheet"/>
 </head>
 <body>
-    <main>
+    <div class="row">
+    <div class="col col-0 col-md-1 col-lg-1 col-xl-1">
+    </div>
+    <div class="col col-1 col-md-2 col-lg-2 col-xl-2">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-home"></i><span class="d-none d-xl-inline"> Home</a></a>
+            <a href="#" class="list-group-item list-group-item-action active">
+                <i class="fa fa-hashtag"></i><span class="d-none d-xl-inline"> Explore</span></a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-bell"></i><span class="d-none d-xl-inline">  Notifications<span></a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-envelope"></i><span class="d-none d-xl-inline">  Messages</span></a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-bookmark"></i><span class="d-none d-xl-inline">  Bookmarks</span></a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-list"></i><span class="d-none d-xl-inline">  Lists</span></a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fa fa-user"></i><span class="d-none d-xl-inline">  Profile</span></a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fas fa-ellipsis-h"></i><span class="d-none d-xl-inline">  More</span></a>
+            <a href="#" class="btn btn-primary">Tweet</a>
+        </div>
+    </div>
+    <div class="col col-10 col-md-8 col-lg-6 col-xxl-5">
         <header class="wd-explore">
-            <section id="search">Search Tuiter</section>
-            <section id="settings"><a href="explore-settings.html">&#9881;</a></section>
+            <form>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control"
+                           id="search" placeholder="Search Tuiter"/>
+                  </div>
+            </form>
         </header>
         <navigation>
-            <ul>
-                <li class="wd-active">For you</li>
-                <li>Trending</li>
-                <li>COVID-19</li>
-                <li>News</li>
-                <li>Sports</li>
-                <li>Entertainment</li>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" href="#">For you</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Trending</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">COVID-19</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Entertainment</a></li>
             </ul>
         </navigation>
     
         <section class="wd-explore">
-            <article>
-                <div>
+            <div class="card">
+                <div class="row">
+                <div class="col col-12">
                 <h2>Trending in Science</h2>
                 <h1>Balloon Boy Strikes Again</h1>
                 <h2>55.5K Tweets</h2>
             </div>
-            </article>
-            <article>
-                <div>
+        </div>
+        </div>
+            <div class="card">
+                <div class="row">
+                <div class="col col-8">
                 <h2>Sports - Trending</h2>
                 <h1>Sockey: Soccer + Hockey</h1>
                 <h2>5,218 Tweets</h2>
                 </div>
-                <img src="images/sockey.png">
-            </article>
-            <article>
-                <div>
-                <h1>The Onion &#10026; <span class='h2'>- Yesterday</span></h1>
+                <div class="col col-4">
+                <img class='element' src="images/sockey.png">
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="row">
+                    <div class="col col-8">
+                <h2>The Onion<span class='timestamp'> - Yesterday</span></h2>
                 <h1>Depressed Groundhog Sees Shadow of Rodent He Once Was</h1>
                 <h2>9,696 Tweets</h2>
             </div>
-                <img src="images/groundhog.jpg">
-            </article>
-            <article>
-                <div>
+            <div class="col col-4">
+                <img class='element' src="images/groundhog.jpg">
+            </div>
+        </div>
+        </div>
+            <div class="card">
+                <div class="row">
+                    <div class="col col-12">
                 <h2>End of Capitalism</h2>
                 <h1>On Landlords: Is it vegan to eat the rich?</h1>
             </div>
-            </article>
-            <article>
-                <div>
-                <h1>Hacker News &#10026; <span class='h2'>- Yesterday</span></h1>
+        </div>
+        </div>
+            <div class="card">
+                <div class="row">
+                    <div class="col col-8">
+                <h2>Hacker News <span class='timestamp'>- Yesterday</span></h2>
                 <h1>We made a snack out of M1 chips and it tastes terrible</h1>
             </div>
-                <img src="images/m1-chips.png">
-            </article>
+            <div class="col col-4">
+                <img class='element' src="images/m1-chips.png">
+            </div>
+        </div>
+    </div>
         </section>
-    </main>
+    </div>
+    <div class="d-none d-lg-block card col col-lg-2 follow">
+        Who to follow
+        <div class="list-group">
+            <div class="row follow-profile">
+            <h1>Ann Hedonia</h1>
+            <h2>@Anehodonia</h2>
+            <a href="#" class="btn btn-primary btn-sm">Follow</a></div>
+            </div>
+        </div>
+     </div>  
+        
+    </div>
 </body>
 </html>
