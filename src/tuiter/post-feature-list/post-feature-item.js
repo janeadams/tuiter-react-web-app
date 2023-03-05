@@ -15,12 +15,12 @@ const PostFeatureItem = (
   <li className="list-group-item">
     <div className="row">
     <div className="col-2">
-        <img height={48} width={48} className="float-end rounded-3" src={`${post.image}`}/>
+        <img height={48} width={48} className="float-end rounded-3" src={`${post.image}`} alt=""/>
       </div>
       <div className="col-10">
         <div><span className="fw-bolder">{post.user}</span> @{post.userName} . {post.time}</div>
         <div>{post.title}</div>
-        <img className="card-img-top rounded" src={`${post.feature}`} width="100%"/>
+        <img className="card-img-top rounded" src={`${post.feature}`} width="100%" alt=""/>
       </div>
     </div>
   </li>
