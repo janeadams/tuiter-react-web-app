@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faRetweet, faComment, faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
 
 const TuitsStats = (
     {
@@ -23,20 +23,20 @@ const TuitsStats = (
         <>
             <div className="row">
                 <a href="/#" className="col text-secondary text-decoration-none">
-                    <FontAwesomeIcon icon="fa-regular fa-comment" className="pe-1 pe-sm-2" />
+                    <FontAwesomeIcon icon={faComment} className="pe-1 pe-sm-2" />
                     <span>{tuit.replies}</span>
                 </a>
                 <a href="/#" className="col text-secondary text-decoration-none">
-                    <FontAwesomeIcon icon="fa-solid fa-retweet" className="pe-1 pe-sm-2" />
+                    <FontAwesomeIcon icon={faRetweet} className="pe-1 pe-sm-2" />
                     <span>{tuit.retuits}</span>
                 </a>
                 <a href="/#" className="col text-secondary text-decoration-none">
                     {tuit.liked && <FontAwesomeIcon icon={faHeart} color={ 'red' } className="pe-1 pe-sm-2" />}
-                    {!tuit.liked && <FontAwesomeIcon icon="fa-regular fa-heart" className="pe-1 pe-sm-2" />}
+                    {!tuit.liked && <FontAwesomeIcon icon={faHeart} color={ 'grey' }className="pe-1 pe-sm-2" />}
                     <span>{tuit.likes}</span>
                 </a>
                 <a href="/#" className="col text-secondary text-decoration-none">
-                    <FontAwesomeIcon icon="fa-solid fa-arrow-up-from-bracket" className="pe-1 pe-sm-2" />
+                    <FontAwesomeIcon icon={faArrowUpFromBracket} className="pe-1 pe-sm-2" />
                 </a>
             </div>
         </>
