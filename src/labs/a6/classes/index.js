@@ -1,4 +1,5 @@
 import './index.css';
+import React  from 'react';
 
 function Classes() {
   const color = 'blue';
@@ -10,5 +11,5 @@ function Classes() {
                                     wd-fg-black wd-padding-10px`}>
         Dangerous background</div>
     </div>)
-};
+}
 export default Classes;
