@@ -1,0 +1,21 @@
+[
+    {
+      "_id": 123,
+      "userName": "Northeaster Graduate Workers Union",
+      "handle": "nugradunion",
+      "avatarIcon": "https://pbs.twimg.com/profile_images/826513782407049216/gAVY_0h2_400x400.jpg"
+    },
+    {
+      "_id": 234,
+      "userName": "ProPublica",
+      "handle": "propublica",
+      "avatarIcon": "https://assets.classy.org/5379137/3bba3d34-8e80-11e7-94ad-0e13b9c6c1be.jpg"
+    },
+    {
+      "_id": 345,
+      "userName": "NPR",
+      "handle": "npr",
+      "avatarIcon": "https://em.uw.edu/sites/em.uw.edu/files/npr-logo.png"
+    }
+   ]
+   

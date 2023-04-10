@@ -1,0 +1,39 @@
+.element {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#search {
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+h2 {
+    font-size: 12px;
+}
+
+.btn-sm {
+    border-radius: 20px;
+    display: inline;
+    width: auto;
+    float: right;
+}
+
+.timestamp {
+    color: #999;
+}
+
+.follow {
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.follow-profile {
+    background-color: #eee;
+}
