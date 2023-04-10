@@ -23,5 +23,8 @@ module.exports = {
    "react/react-in-jsx-scope": "off",
    "react/prop-types": "off",
    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+   '@typescript-eslint/no-var-requires': 0,
+   '@typescript-eslint/no-empty-function': 0,
+   'react/jsx-key': 0,
     }
 }
